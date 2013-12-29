@@ -13,7 +13,7 @@ public class Xxhasher extends AbstractNonStreamingHashFunction{
 	public HashCode hashBytes(byte[] input,
                    int off,
                    int len) {
-		int hash = hash32.hash(input, 0, input.length, seed);
+		int hash = hash32.hash(input, off, input.length, seed);
 		HashCode theCode = HashCode.fromInt(hash);
 		return theCode;
 	}
