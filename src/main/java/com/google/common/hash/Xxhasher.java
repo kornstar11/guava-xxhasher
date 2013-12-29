@@ -14,8 +14,8 @@ public class Xxhasher extends AbstractNonStreamingHashFunction{
                    int off,
                    int len) {
 		int hash = hash32.hash(input, 0, input.length, seed);
-		HashCode blah = HashCode.fromInt(hash);
-		return blah;
+		HashCode theCode = HashCode.fromInt(hash);
+		return theCode;
 	}
   
 }
